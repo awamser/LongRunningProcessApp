@@ -15,6 +15,6 @@ struct LongRunningJob: AsyncJob {
   }
 
   func error(_ context: QueueContext, _ error: Error, _ payload: Payload) async {
-    context.application.logger.error("Error processing job: \(error)")
+            context.application.logger.error("Error processing job: \(error)")
   }
 }
